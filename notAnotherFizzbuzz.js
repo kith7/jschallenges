@@ -18,13 +18,11 @@ Your function's output should look something like this:
 4 - :(
 5 - $100,000 bonus!
 
-Hint: Remainder operator, modulo 
+Hint: Remainder operator, modulo %
  */
 
 function awardBonuses(ids) {
-  // loop through 1 - 100
   for (let i = 1; i <= ids; i++) {
-    // is divisible by 3 & 5?
     if (i % 5 === 0 && i % 3 === 0) {
       console.log(`ID Number ${i} - JACKPOT! 1 Million and a Yacht!`);
     } else if (i % 3 === 0) {
